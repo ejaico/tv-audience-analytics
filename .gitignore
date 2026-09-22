@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Local databases
+*.duckdb
+*.duckdb.wal
+
+# Raw source data
+data/raw/
+
+# Python/cache files
+.pytest_cache/
+
+# VS Code local settings
+.vscode/
