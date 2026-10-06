@@ -1,0 +1,74 @@
+version: 2
+
+models:
+
+  - name: dim_title
+    columns:
+      - name: tconst
+        data_tests:
+          - not_null
+          - unique
+
+  - name: dim_audience
+    columns:
+      - name: audience_key
+        data_tests:
+          - not_null
+          - unique
+
+  - name: dim_platform
+    columns:
+      - name: platform_key
+        data_tests:
+          - not_null
+          - unique
+
+      - name: platform_type
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - Linear
+                  - Streaming
+
+  - name: dim_market
+    columns:
+      - name: market_key
+        data_tests:
+          - not_null
+          - unique
+
+  - name: dim_campaign
+    columns:
+      - name: campaign_key
+        data_tests:
+          - not_null
+          - unique
+
+  - name: fact_viewing_session
+    columns:
+      - name: session_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: viewing_minutes
+        data_tests:
+          - not_null
+
+      - name: title_key
+        data_tests:
+          - not_null
+
+      - name: audience_key
+        data_tests:
+          - not_null
+
+      - name: platform_key
+        data_tests:
+          - not_null
+
+      - name: market_key
+        data_tests:
+          - not_null

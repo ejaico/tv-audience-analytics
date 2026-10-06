@@ -1,0 +1,20 @@
+select
+    session_id,
+    household_id,
+    viewing_date,
+    viewing_sequence,
+    tconst,
+    primaryTitle as primary_title,
+    genres,
+    primary_genre,
+    platform_type,
+    network,
+    market,
+    age_band,
+    gender,
+    income_band,
+    viewing_minutes,
+    device_type,
+    ad_exposed,
+    campaign_id
+from {{ source('raw', 'synthetic_audience_viewing_raw') }}

@@ -18,3 +18,15 @@ data/raw/
 
 # VS Code local settings
 .vscode/
+
+# Generated logs
+logs/
+**/logs/
+
+# Generated dbt artifacts
+**/target/
+**/dbt_packages/
+
+# Development inspection scripts
+inspect_viewing_sequence.py
+inspect_viewing_table.py
