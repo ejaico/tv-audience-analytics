@@ -10,7 +10,7 @@ The primary focus is not the technology itself, but how the resulting data can b
 
 ## Power BI Analytical Story
 
-I organized the dashboard as a four-page analytical journey, moving from broad viewing patterns toward increasingly specific audience and campaign questions.
+I organized the dashboard as a four-page analytical journey, moving from broad viewing patterns toward increasingly specific audience and campaign questions.  I also designed the dashboard to be intuitive and consistent, with page navigation buttons in gray, slicers/filters highlighted in green, and KPI cards in bigger font to stand out.  I approach dashboard creation with the stakeholder's perspective in mind - data storytelling is less effective when the user doesn't know what's going on.
 
 ### 1. Audience Overview — What is happening?
 
@@ -22,6 +22,8 @@ A high-level view of viewing activity across time, programs, genres, platforms, 
 - Viewing by Platform type
 - Viewing by Age band
 
+![Audience Overview](docs/images/audience-overview.png)
+
 ### 2. Viewer Journey — How are viewers behaving?
 
 Examines genre-to-genre transitions to understand how viewing behavior changes as audiences move from one type of content to another.  Key elements include:
@@ -31,6 +33,8 @@ Examines genre-to-genre transitions to understand how viewing behavior changes a
 - Top genre transitions
 - Genre-to-genre transition matrix
 
+![Viewer Journey](docs/images/viewer-journey.png)
+
 ### 3. Audience Affinity — Who is watching what?
 
 Analyzes genre preferences and audience composition across demographic and audience segments.  Key elements include:
@@ -39,6 +43,8 @@ Analyzes genre preferences and audience composition across demographic and audie
 - Genre composition by audience segment
 - Audience composition by age and gender
 - Viewing hours by audience segment
+
+![Audience Affinity](docs/images/audience-affinity.png)
 
 ### 4. Campaign Reach & Measurement — How could audience insights be applied?
 
@@ -50,9 +56,11 @@ Uses simulated campaign exposure data to show how audience analytics could be ex
 - Reach by audience segment
 - Campaign exposure frequency
 
+![Campaign Reach & Measurement](docs/images/campaign-reach.png)
+
 The four pages are designed to tell a connected story: **What is happening → How are viewers behaving → Who is watching what → How could those insights be applied?**
 
-> **Important:** Campaign reach and exposure metrics are simulated and illustrative. They are not causal estimates of advertising effectiveness and do not represent proprietary IMDb, Nielsen, or client data.
+> **Important:** Campaign reach and exposure metrics are simulated and illustrative. They are not causal estimates of advertising effectiveness and do not represent proprietary Nielsen or client data.
 
 ---
 
